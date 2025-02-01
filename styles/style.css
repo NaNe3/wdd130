@@ -1,0 +1,74 @@
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: white;
+  --secondary-color: #396E94;
+  --accent1-color: #3a506b;
+  --accent2-color: #1c2541;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Playwrite VN";
+  --paragraph-font: "Ariel";
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #396E94  ;
+  --nav-link-color: #fff;
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: #fff;
+  --nav-hover-background-color: var(--accent1-color);
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+nav a {
+  text-align: center;
+}
+
+#hero-msg h1, #hero-msg h4 {
+  text-align: center;
+}
+
+.button-box {
+  text-align: center;
+}
+
+main section {
+  text-align: center;
+}
+
+#background {
+  height: 725px;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+header {
+  background-color: rgba(0, 0, 255, 0.5)
+}
+nav a:hover {
+  background-color: var(--accent1-color);
+}
+
+.book, .join {
+  background-color: var(--accent1-color);
+}
+.book:hover, .join:hover {
+  background-color: var(--accent2-color);
+}
+#background {
+  background-color: var(--accent2-color);
+}
+.msg {
+  background-color: var(--accent1-color);
+}
+footer {
+  background-color: var(--secondary-color);
+}
