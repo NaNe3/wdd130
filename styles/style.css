@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: white;
@@ -6,7 +8,7 @@
   --accent2-color: #1c2541;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Playwrite VN";
+  --heading-font: "Playwrite VN", sans-serif, "Ariel";
   --paragraph-font: "Ariel";
 
   /* these colors below should be chosen from among your palette colors above */
@@ -26,8 +28,21 @@
   margin: 0 auto;
 }
 
+.home-title {
+  font-family: var(--heading-font);
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.msg {
+  font-family: var(--heading-font);
+  background-color: var(--accent1-color);
+  line-height: 1.5em;
+}
+
 nav a {
   text-align: center;
+  padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -48,7 +63,15 @@ main section {
 
 body {
   background-color: var(--primary-color);
+  font-family: var(--heading-font), Arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
+h2 {
+  margin: 0;
+}
+
 
 header {
   background-color: rgba(0, 0, 255, 0.5)
@@ -57,8 +80,19 @@ nav a:hover {
   background-color: var(--accent1-color);
 }
 
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+
+.icon {
+  padding-top: 10px;
+}
+
 .book, .join {
   background-color: var(--accent1-color);
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 .book:hover, .join:hover {
   background-color: var(--accent2-color);
@@ -66,9 +100,25 @@ nav a:hover {
 #background {
   background-color: var(--accent2-color);
 }
-.msg {
-  background-color: var(--accent1-color);
+.msg { background-color: var(--accent1-color); padding: 35px; }
+
+.msg p { padding-bottom: 15px; }
+.card-img {
+  border: 10px solid #d9c2a3;
+}
+main section img {
+  box-sizing: border-box;
 }
 footer {
   background-color: var(--secondary-color);
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+
+footer .social img {
+  padding-top: 15px;
+}
+
+#logo_link {
+  padding-top: 5px;
 }
