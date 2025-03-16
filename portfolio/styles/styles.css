@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --primary-color: #0ca3ff;
+  --secondary-color: #fff;
+  --accent1-color: #0ca3ff;
+  --accent2-color: #9adeff;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Nunito", sans-serif;
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #0ca3ff;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #0ca3ff; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #0ca3ff  ;
+  --nav-link-color: #0ca3ff;
+  --nav-background-color: white;
+  --nav-hover-link-color: #9adeff;
+  --nav-hover-background-color: transparent;
+}
+
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  /* height: 100px; */
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid var(--accent1-color);
+}
+
+.site-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.site-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-family: var(--heading-font);
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+}
+
+.landing {
+  width: 100%;
+  max-height: 70vh;
+  overflow: hidden;
+}
+
+.landing img {
+  width: 100%;
+  object-fit: cover;
+}
+
+footer {
+  width: 100%;
+  border-top: 2px solid var(--accent1-color);
+  overflow: hidden;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px 100px;
+  box-sizing: border-box;
+}
+
+footer .footer-logo {
+  width: 100px;
+  height: 100px;
+}
+
+footer .footer-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.footer-col p {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--headline-color-on-white);
+  text-align: center;
+}
+
+.footer-col a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-family: var(--heading-font);
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
