@@ -6,6 +6,7 @@
   <title>Eli Summers | Experience</title>
 
   <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/experiences.css" />
 </head>
 <body>
   <header>
@@ -20,51 +21,71 @@
   </header>
   <main>
     <div class="landing">
-      <img src="./images/flySim.png" alt="Landing" />
+      <img src="./images/personal-2.jpg" alt="Landing" />
 
       <h1>Work Experiences</h1>
       <h1>Personal Projects</h1>
     </div>
 
-    <section>
+    <section class="experience-section">
       <div class="experience">
         <div class="img-container">
-          <img src="./images/flock.png"/>
+          <img class='modal-img' src="./images/flock.png"/>
         </div>
-        <h2>flock</h2>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-        <button>see project</button>
+        <div class="experience-content">
+          <h2>flock</h2>
+          <p>This is a mobile app which will allow the users to study the scriptures in groups. It has been said by general authorities that building a testimony cannot be done by yourself. Therefore this app was created by me to serve as a tool so as to study with your friends and family.</p>
+          <p>I spent around 300 hours so far writing this project in React Native using SupaBase to facilitate the backend functions</p>
+          <button onclick="openInNewTab(`https://lingerlonger.io/`)">see project</button>
+        </div>
       </div>
 
       <div class="experience">
         <div class="img-container">
-          <img src="./images/twittyr.jpeg"/>
+          <img class='modal-img' src="./images/twittyr.jpeg"/>
         </div>
-        <h2>twittyr</h2>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-        <button>see project</button>
+        <div class="experience-content">
+          <h2>twittyr</h2>
+          <p>This is a website that I made during the pandemic of 2020. I remember having a ton of time on my hands so I created this website to perfectly replicate twitter and its basic functionality. This was long before the advent of AI and I certainly couldn't copy and paste the website therefore I had to create everythign from scratch.</p>
+          <p>This was certainly a challenge and I imagine that I spent several months working on it. I used basic PHP and HTML to make this project work</p>
+          <button onclick="openInNewTab('https://github.com/NaNe3/twittyr/tree/main')">see project</button>
+        </div>
       </div>
 
       <div class="experience">
         <div class="img-container">
-          <img src="./images/eli1.png"/>
+          <img class='modal-img' src="./images/eli1.png"/>
         </div>
-        <h2>Family Search</h2>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-        <button>see project</button>
+        <div class="experience-content">
+          <h2>Family Search</h2>
+          <p>I worked for The Church of Jesus Christ of latter Day Saints from January of 2024 to August of 2024. I spent my time learning valuable skills such as React among other very important things. This was an excellent opportunity to really get out there and test the waters as a software engineer!</p>
+          <button onclick="openInNewTab('https://www.linkedin.com/in/eli-summers-81483b183/')">see linkedIn summary</button>
+        </div>
       </div>
 
       <div class="experience">
         <div class="img-container">
-          <img src="./images/personal-1.jpg"/>
+          <img class='modal-img' src="./images/flySim.png"/>
         </div>
-        <h2>Imaginary Friends</h2>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-        <button>see project</button>
+        <div class="experience-content">
+          <h2>Imaginary Friends</h2>
+          <p>This was my first opportunity to learn what the Software Industry was like. When I was 16 I interned at Imaginary Friends. This was a company in Yuma Arizona which specialized in design. This included photoshop, websites, etc. I was able to learn services such as FTP and wordpress while working for them!!</p>
+          <button onclick="openInNewTab('https://www.linkedin.com/in/eli-summers-81483b183/')">see linkedIn summary</button>
+          </div>
       </div>
 
     </section>
+    <div id="myModal" class="modal">
 
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+    
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+    
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
   </main>
   <footer>
     <a class="footer-logo" href="./index.html">
@@ -80,6 +101,7 @@
       <a href="./index.html">Home</a>
       <a href="./experiences.html">Experiences</a>
       <a href="./about.html">About</a>
+      <a href="./site-plan.html">Site Plan</a>
     </div>
     <div class="footer-col">
       <p>CONTACT ME</p>
@@ -88,5 +110,33 @@
       <a href="#" target="_blank">Smoke Signals</a>
     </div>
   </footer>
+  <script>
+    function openInNewTab(url) {
+      window.open(url, '_blank');
+    }
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var images = document.getElementsByClassName("modal-img");
+    Array.from(images).forEach(element => {
+      element.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    });
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
 </body>
 </html>
