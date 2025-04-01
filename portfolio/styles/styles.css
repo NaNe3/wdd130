@@ -44,6 +44,8 @@ header {
   position: sticky;
   top: 0;
   border-bottom: 2px solid var(--accent1-color);
+
+  z-index: 1000;
 }
 
 .site-logo {
